@@ -1,0 +1,366 @@
+body {
+  background-color: #000000;
+  margin: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  border:none;
+  text-align: center;
+  background-color: #d10000 ;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.img-logo{
+  max-width:100%;
+  height: auto;
+  width: 5rem;
+}
+
+/*portada*/
+.container {
+  width: 100%; 
+  max-width: 3325px;
+  overflow: hidden; 
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.container img {
+  width: 100%; 
+  height: auto; 
+  margin: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .container img:first-child {
+    display: block; 
+  }
+
+  .container img:last-child {
+    display: none; 
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .container img:first-child {
+    display: none; 
+  }
+
+  .container img:last-child {
+    display: block;
+    height: 100vh; 
+    object-fit: cover; 
+  }
+}
+
+/*separador*/
+  .separator.lines {
+    width: 100%;
+    height: 5px;
+    margin: 0%;
+    position:relative;
+    overflow: hidden;
+    align-items: center;
+  
+  
+  }
+  .separator.lines::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: #ffffff;
+    animation: expand-contract 10s infinite;
+  }
+  @keyframes expand-contract {
+    0% { transform: scaleX(0); }
+    50% { transform: scaleX(1); }
+    100% { transform: scaleX(0); }
+  }
+
+  /*letras*/
+
+  h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    color:#fdfafa;
+  }
+  
+    @media (max-width: 768px) { h1 { font-size: 30px; } }
+  
+    @media (max-width: 576px) { h1 { font-size: 20px; } }
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .faster-one-regular {
+  font-family: "Faster One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10vw;
+  color: #dfdfdf;
+ /* Borde blanco de 1px */
+}
+
+  .staatliches-regular-3{
+    bottom: 70px;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 50px;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  .staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 40px;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  
+  .staatliches-regular-2 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 50px;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  p{
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    gap: .75rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-self:center;
+    size: 20%;
+    position: absolute;
+}
+
+  /*contenedor 3*/
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+
+  }
+  .column-1 {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+  }
+  .image-container {
+    text-align: center;
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .image-container img:hover {
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 767px) {
+    .column-1 {
+        flex-basis: 100%; 
+    }
+}
+  .subtitle {
+    text-align: center;
+    margin-top: 10px;
+  } 
+
+  /*boton retroceso*/
+  .boton {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 70px;
+    font-style: normal;
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+  }
+    
+
+
+
+  /*pie de pagina*/
+  footer{
+    background-color:#d10000 ;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  
+
+  /*boton wsp*/
+  .float-wa{ position:fixed; 
+    width:80px; height:80px; 
+    bottom:40px; left:40px; 
+    background-color:#25d366; 
+    color:#FFF; 
+    border-radius:50px; 
+    text-align:center; 
+    font-size:50px; 
+    z-index:100; }
+  
+  /*estilos contacto-----------------------------------------------------------------------------------------------------------------*/ 
+  #contact-form {
+    padding: 20px;
+    height: 400px;
+    background-color:rgb(105, 105, 104) ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:normal;
+    margin: 0%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #map {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .social-icons {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .social-icon {
+    margin: 0 5px;
+    font-size: 50px;
+    transition: transform 0.3s ease;
+    background-color:rgb(105, 105, 104) ;
+    color: white;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.2);
+    color:#d10000;
+  }
+
+/*contenedor contacto----------------------------------------------------------------------------------------------------------------------------------*/
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; 
+  background-color:rgb(105, 105, 104);
+  align-items: center;
+  max-width: 100%;
+  margin: 20px;
+}
+
+.columna {
+  border:none;
+  width: 100%;
+  align-items: center; 
+}
+
+.columna:nth-child(n+2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .columna {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .columna {
+    width: 20%; 
+  }
+}
+
+.btn-1{
+  padding: 10px;
+  border-radius: 50%;
+  margin:2px;
+  color: #FFF;
+  background-color: #d10000;
+  size: 20%;
+}
+
+/*boton 3*/
+.boton {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #868686;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #868686;
+}
+
+.icono {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .boton {
+    padding: 8px 16px;
+    font-size: 20px;
+  }
+  .icono {
+    font-size: 16px;
+  }
+}
